@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker"
+             x:Class="CustomHeader.MainPage">
+
+    <picker:SfPicker x:Name="picker">
+        <picker:SfPicker.HeaderView>
+            <picker:PickerHeaderView Text="Select a Country" 
+                                     Background="Orange" 
+                                     Height="40"
+                                     DividerColor="CadetBlue">
+                <picker:PickerHeaderView.TextStyle>
+                    <picker:PickerTextStyle TextColor="DarkBlue" 
+                                            FontSize="20" 
+                                            FontAttributes="Italic"/>
+                </picker:PickerHeaderView.TextStyle>
+            </picker:PickerHeaderView>
+        </picker:SfPicker.HeaderView>
+    </picker:SfPicker>
+</ContentPage>
